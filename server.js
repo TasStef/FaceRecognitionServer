@@ -28,11 +28,6 @@ app.listen(3000, () => {
   console.log("App is running on 3000");
 });
 
-// //! Root
-// app.get("/", (req, res) => {
-//   res.send("It's working");
-// });
-
 //! Sign In
 app.post("/signin", (req, res) => {
   signin.signin(req, res, db, bcrypt);
