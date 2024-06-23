@@ -11,11 +11,12 @@ import image from "./controllers/image.js";
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    ssl: { rejectUnauthorized: false },
+    host: "dpg-cpra4hrv2p9s73a35q50-a.frankfurt-postgres.render.com",
     port: 5432,
-    user: "postgres",
-    password: "123456",
-    database: "smart-brain",
+    user: "facebraindb_user",
+    password: "0A9bgbECNHuwh9yCGGymLSNCChGf5B91",
+    database: "facebraindb",
   },
 });
 
